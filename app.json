@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "LUCID AI",
+    "slug": "ia-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#060e20"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lucidai.assistant",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs microphone access to transcribe interview questions in real time."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#060e20"
+      },
+      "package": "com.lucidai.assistant"
+    },
+    "web": {},
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "supabaseUrl": "YOUR_SUPABASE_URL",
+      "supabaseAnonKey": "YOUR_SUPABASE_ANON_KEY",
+      "deepseekApiKey": "YOUR_DEEPSEEK_API_KEY"
+    }
+  }
+}
